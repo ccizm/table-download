@@ -26,7 +26,9 @@ function downloadTable(structured, filename, options = {}) {
   if (exportCSV) {
     // 导出 CSV
     const csv = XLSX.utils.sheet_to_csv(ws);
-    const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+    // 添加 UTF-8 BOM，确保 Excel 正确识别编码，避免非英文乱码
+    const BOM = '\ufeff';
+    const blob = new Blob([BOM, csv], { type: 'text/csv;charset=utf-8' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
     a.download = filename.endsWith('.csv') ? filename : `${filename}.csv`;
