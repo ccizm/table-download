@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "Baixador de Tabelas" },
+  "extension_description": { "message": "Exporta tabelas da Web para Excel ou CSV, com suporte aos principais frameworks de UI." },
+  "action_title": { "message": "Baixador de Tabelas" },
+  "panel_title": { "message": "Configurações de exportação" },
+  "file_type_label": { "message": "Tipo de arquivo:" },
+  "sheet_name_label": { "message": "Nome da planilha:" },
+  "sheet_name_placeholder": { "message": "Dados da tabela" },
+  "only_visible_columns_label": { "message": "Exportar apenas colunas visíveis" },
+  "preserve_links_label": { "message": "Preservar hiperlinks" },
+  "cancel": { "message": "Cancelar" },
+  "export": { "message": "Exportar" },
+  "default_sheet_name": { "message": "Dados da tabela" }
+}

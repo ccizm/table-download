@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "Table Downloader" },
+  "extension_description": { "message": "Export web data tables to Excel or CSV, supports popular UI frameworks." },
+  "action_title": { "message": "Table Downloader" },
+  "panel_title": { "message": "Export Settings" },
+  "file_type_label": { "message": "File type:" },
+  "sheet_name_label": { "message": "Sheet name:" },
+  "sheet_name_placeholder": { "message": "Table Data" },
+  "only_visible_columns_label": { "message": "Only export visible columns" },
+  "preserve_links_label": { "message": "Preserve hyperlinks" },
+  "cancel": { "message": "Cancel" },
+  "export": { "message": "Export" },
+  "default_sheet_name": { "message": "Table Data" }
+}

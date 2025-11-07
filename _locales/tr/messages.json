@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "Tablo İndirici" },
+  "extension_description": { "message": "Web tablolarını Excel veya CSV’ye aktarır, popüler UI çerçevelerini destekler." },
+  "action_title": { "message": "Tablo İndirici" },
+  "panel_title": { "message": "Dışa aktarma ayarları" },
+  "file_type_label": { "message": "Dosya türü:" },
+  "sheet_name_label": { "message": "Sayfa adı:" },
+  "sheet_name_placeholder": { "message": "Tablo verileri" },
+  "only_visible_columns_label": { "message": "Yalnızca görünür sütunları dışa aktar" },
+  "preserve_links_label": { "message": "Köprüleri koru" },
+  "cancel": { "message": "İptal" },
+  "export": { "message": "Dışa aktar" },
+  "default_sheet_name": { "message": "Tablo verileri" }
+}

@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "Tabellen-Downloader" },
+  "extension_description": { "message": "Webtabellen nach Excel oder CSV exportieren, unterstützt gängige UI-Frameworks." },
+  "action_title": { "message": "Tabellen-Downloader" },
+  "panel_title": { "message": "Exporteinstellungen" },
+  "file_type_label": { "message": "Dateityp:" },
+  "sheet_name_label": { "message": "Blattname:" },
+  "sheet_name_placeholder": { "message": "Tabellendaten" },
+  "only_visible_columns_label": { "message": "Nur sichtbare Spalten exportieren" },
+  "preserve_links_label": { "message": "Hyperlinks beibehalten" },
+  "cancel": { "message": "Abbrechen" },
+  "export": { "message": "Exportieren" },
+  "default_sheet_name": { "message": "Tabellendaten" }
+}

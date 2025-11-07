@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "Descargador de tablas" },
+  "extension_description": { "message": "Exporta tablas web a Excel o CSV, compatible con frameworks UI populares." },
+  "action_title": { "message": "Descargador de tablas" },
+  "panel_title": { "message": "Configuración de exportación" },
+  "file_type_label": { "message": "Tipo de archivo:" },
+  "sheet_name_label": { "message": "Nombre de la hoja:" },
+  "sheet_name_placeholder": { "message": "Datos de la tabla" },
+  "only_visible_columns_label": { "message": "Exportar solo columnas visibles" },
+  "preserve_links_label": { "message": "Conservar hipervínculos" },
+  "cancel": { "message": "Cancelar" },
+  "export": { "message": "Exportar" },
+  "default_sheet_name": { "message": "Datos de la tabla" }
+}

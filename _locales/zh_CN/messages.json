@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "表格下载器" },
+  "extension_description": { "message": "一键导出网页数据表为Excel或CSV，支持主流UI框架。" },
+  "action_title": { "message": "表格下载器" },
+  "panel_title": { "message": "导出设置" },
+  "file_type_label": { "message": "文件类型：" },
+  "sheet_name_label": { "message": "工作表名：" },
+  "sheet_name_placeholder": { "message": "表格数据" },
+  "only_visible_columns_label": { "message": "仅导出可见列" },
+  "preserve_links_label": { "message": "保留超链接" },
+  "cancel": { "message": "取消" },
+  "export": { "message": "导出" },
+  "default_sheet_name": { "message": "表格数据" }
+}

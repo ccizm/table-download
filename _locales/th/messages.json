@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "ตัวดาวน์โหลดตาราง" },
+  "extension_description": { "message": "ส่งออกตารางข้อมูลเว็บเป็น Excel หรือ CSV รองรับเฟรมเวิร์ก UI ยอดนิยม" },
+  "action_title": { "message": "ตัวดาวน์โหลดตาราง" },
+  "panel_title": { "message": "การตั้งค่าการส่งออก" },
+  "file_type_label": { "message": "ประเภทไฟล์:" },
+  "sheet_name_label": { "message": "ชื่อชีต:" },
+  "sheet_name_placeholder": { "message": "ข้อมูลตาราง" },
+  "only_visible_columns_label": { "message": "ส่งออกเฉพาะคอลัมน์ที่มองเห็นได้" },
+  "preserve_links_label": { "message": "รักษาไฮเปอร์ลิงก์" },
+  "cancel": { "message": "ยกเลิก" },
+  "export": { "message": "ส่งออก" },
+  "default_sheet_name": { "message": "ข้อมูลตาราง" }
+}

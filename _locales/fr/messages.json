@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "Téléchargeur de tableau" },
+  "extension_description": { "message": "Exporter les tableaux Web vers Excel ou CSV, prend en charge les principaux frameworks UI." },
+  "action_title": { "message": "Téléchargeur de tableau" },
+  "panel_title": { "message": "Paramètres d’export" },
+  "file_type_label": { "message": "Type de fichier :" },
+  "sheet_name_label": { "message": "Nom de la feuille :" },
+  "sheet_name_placeholder": { "message": "Données du tableau" },
+  "only_visible_columns_label": { "message": "Exporter uniquement les colonnes visibles" },
+  "preserve_links_label": { "message": "Conserver les hyperliens" },
+  "cancel": { "message": "Annuler" },
+  "export": { "message": "Exporter" },
+  "default_sheet_name": { "message": "Données du tableau" }
+}

@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "表格下載器" },
+  "extension_description": { "message": "一鍵導出網頁資料表為 Excel 或 CSV，支援主流 UI 框架。" },
+  "action_title": { "message": "表格下載器" },
+  "panel_title": { "message": "匯出設定" },
+  "file_type_label": { "message": "檔案類型：" },
+  "sheet_name_label": { "message": "工作表名稱：" },
+  "sheet_name_placeholder": { "message": "表格資料" },
+  "only_visible_columns_label": { "message": "僅匯出可見欄" },
+  "preserve_links_label": { "message": "保留超連結" },
+  "cancel": { "message": "取消" },
+  "export": { "message": "匯出" },
+  "default_sheet_name": { "message": "表格資料" }
+}

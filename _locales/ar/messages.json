@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "أداة تنزيل الجداول" },
+  "extension_description": { "message": "تصدير جداول الويب إلى Excel أو CSV، يدعم أطر واجهات المستخدم الشائعة." },
+  "action_title": { "message": "أداة تنزيل الجداول" },
+  "panel_title": { "message": "إعدادات التصدير" },
+  "file_type_label": { "message": "نوع الملف:" },
+  "sheet_name_label": { "message": "اسم الورقة:" },
+  "sheet_name_placeholder": { "message": "بيانات الجدول" },
+  "only_visible_columns_label": { "message": "تصدير الأعمدة الظاهرة فقط" },
+  "preserve_links_label": { "message": "الحفاظ على الروابط التشعبية" },
+  "cancel": { "message": "إلغاء" },
+  "export": { "message": "تصدير" },
+  "default_sheet_name": { "message": "بيانات الجدول" }
+}

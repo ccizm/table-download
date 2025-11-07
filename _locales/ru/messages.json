@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "Загрузчик таблиц" },
+  "extension_description": { "message": "Экспорт веб-таблиц в Excel или CSV, поддержка популярных UI-фреймворков." },
+  "action_title": { "message": "Загрузчик таблиц" },
+  "panel_title": { "message": "Настройки экспорта" },
+  "file_type_label": { "message": "Тип файла:" },
+  "sheet_name_label": { "message": "Имя листа:" },
+  "sheet_name_placeholder": { "message": "Данные таблицы" },
+  "only_visible_columns_label": { "message": "Экспортировать только видимые столбцы" },
+  "preserve_links_label": { "message": "Сохранять гиперссылки" },
+  "cancel": { "message": "Отмена" },
+  "export": { "message": "Экспорт" },
+  "default_sheet_name": { "message": "Данные таблицы" }
+}

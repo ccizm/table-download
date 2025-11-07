@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "テーブルダウンローダー" },
+  "extension_description": { "message": "WebのデータテーブルをExcelまたはCSVにエクスポート。主要UIフレームワークに対応。" },
+  "action_title": { "message": "テーブルダウンローダー" },
+  "panel_title": { "message": "エクスポート設定" },
+  "file_type_label": { "message": "ファイル形式：" },
+  "sheet_name_label": { "message": "シート名：" },
+  "sheet_name_placeholder": { "message": "テーブルデータ" },
+  "only_visible_columns_label": { "message": "表示列のみエクスポート" },
+  "preserve_links_label": { "message": "ハイパーリンクを保持" },
+  "cancel": { "message": "キャンセル" },
+  "export": { "message": "エクスポート" },
+  "default_sheet_name": { "message": "テーブルデータ" }
+}

@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "테이블 다운로더" },
+  "extension_description": { "message": "웹 데이터 테이블을 Excel 또는 CSV로 내보내기, 주요 UI 프레임워크 지원." },
+  "action_title": { "message": "테이블 다운로더" },
+  "panel_title": { "message": "내보내기 설정" },
+  "file_type_label": { "message": "파일 형식:" },
+  "sheet_name_label": { "message": "시트 이름:" },
+  "sheet_name_placeholder": { "message": "테이블 데이터" },
+  "only_visible_columns_label": { "message": "표시된 열만 내보내기" },
+  "preserve_links_label": { "message": "하이퍼링크 유지" },
+  "cancel": { "message": "취소" },
+  "export": { "message": "내보내기" },
+  "default_sheet_name": { "message": "테이블 데이터" }
+}

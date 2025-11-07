@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "Trình tải bảng" },
+  "extension_description": { "message": "Xuất bảng dữ liệu web sang Excel hoặc CSV, hỗ trợ các framework UI phổ biến." },
+  "action_title": { "message": "Trình tải bảng" },
+  "panel_title": { "message": "Cài đặt xuất" },
+  "file_type_label": { "message": "Loại tệp:" },
+  "sheet_name_label": { "message": "Tên trang tính:" },
+  "sheet_name_placeholder": { "message": "Dữ liệu bảng" },
+  "only_visible_columns_label": { "message": "Chỉ xuất các cột hiển thị" },
+  "preserve_links_label": { "message": "Giữ siêu liên kết" },
+  "cancel": { "message": "Hủy" },
+  "export": { "message": "Xuất" },
+  "default_sheet_name": { "message": "Dữ liệu bảng" }
+}

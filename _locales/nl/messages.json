@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "Tabel-downloader" },
+  "extension_description": { "message": "Exporteer webtabellen naar Excel of CSV, ondersteunt populaire UI-frameworks." },
+  "action_title": { "message": "Tabel-downloader" },
+  "panel_title": { "message": "Exportinstellingen" },
+  "file_type_label": { "message": "Bestandstype:" },
+  "sheet_name_label": { "message": "Bladnaam:" },
+  "sheet_name_placeholder": { "message": "Tabelgegevens" },
+  "only_visible_columns_label": { "message": "Alleen zichtbare kolommen exporteren" },
+  "preserve_links_label": { "message": "Hyperlinks behouden" },
+  "cancel": { "message": "Annuleren" },
+  "export": { "message": "Exporteren" },
+  "default_sheet_name": { "message": "Tabelgegevens" }
+}

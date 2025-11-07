@@ -1,0 +1,14 @@
+{
+  "extension_name": { "message": "टेबल डाउनलोडर" },
+  "extension_description": { "message": "वेब डेटा टेबल को Excel या CSV में निर्यात करें, लोकप्रिय UI फ्रेमवर्क का समर्थन।" },
+  "action_title": { "message": "टेबल डाउनलोडर" },
+  "panel_title": { "message": "निर्यात सेटिंग्स" },
+  "file_type_label": { "message": "फ़ाइल प्रकार:" },
+  "sheet_name_label": { "message": "शीट का नाम:" },
+  "sheet_name_placeholder": { "message": "टेबल डेटा" },
+  "only_visible_columns_label": { "message": "केवल दिखाई देने वाले कॉलम निर्यात करें" },
+  "preserve_links_label": { "message": "हाइपरलिंक बनाए रखें" },
+  "cancel": { "message": "रद्द करें" },
+  "export": { "message": "निर्यात" },
+  "default_sheet_name": { "message": "टेबल डेटा" }
+}
