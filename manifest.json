@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extension_name__",
+  "version": "1.0",
+  "author": "Siem",
+  "description": "__MSG_extension_description__",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "__MSG_action_title__"
+  },
+  "default_locale": "zh_CN",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["xlsx.full.min.js", "content.js", "download.js"]
+    }
+  ]
+}
