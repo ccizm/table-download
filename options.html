@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Table Downloader Options</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 20px; }
+      h1 { font-size: 18px; margin-bottom: 16px; }
+      .section { width: 300px; margin-bottom: 20px; }
+      label { display: block; font-weight: 600; margin-bottom: 6px; }
+      textarea { width: 100%; min-height: 100px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .row { display: flex; gap: 16px; align-items: center; }
+      .row > div { flex: 1; }
+      input[type="color"] { width: 48px; height: 32px; padding: 0; }
+      input[type="number"] { width: 120px; }
+      .actions { display: flex; gap: 12px; }
+      button { padding: 6px 12px; cursor: pointer; }
+      #buttonSizeHint { font-size: 11px; color: #777; line-height: 40px; }
+      small { color: #666; }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">表格下载器设置</h1>
+
+    <div class="section">
+      <label id="excludedUrlsLabel" for="excludedUrls">排除显示的网址（每行一个，支持包含匹配）</label>
+      <textarea id="excludedUrls" placeholder="例如：&#10;example.com&#10;https://foo.bar/path"></textarea>
+      <small id="excludedUrlsHint">含有这些片段的网址将不显示悬浮下载按钮。</small>
+    </div>
+
+    <div class="section">
+      <div class="row">
+        <div>
+          <label id="buttonColorLabel" for="buttonColor">按钮颜色</label>
+          <input type="color" id="buttonColor" />
+        </div>
+        <div>
+          <label id="iconColorLabel" for="iconColor">图标颜色</label>
+          <input type="color" id="iconColor" />
+        </div>
+        <div>
+          <label id="buttonSizeLabel" for="buttonSize">按钮大小（图标像素）</label>
+          <input type="number" id="buttonSize" min="12" max="48" step="1" />
+        </div>
+      </div>
+      <small id="buttonSizeHint">大小控制图标宽高（默认 20px）。</small>
+    </div>
+
+    <div class="actions">
+      <button id="save">保存</button>
+      <button id="reset">恢复默认</button>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>

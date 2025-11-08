@@ -11,4 +11,26 @@
   "cancel": { "message": "取消" },
   "export": { "message": "导出" },
   "default_sheet_name": { "message": "表格数据" }
+  , "download_button_title": { "message": "点击下载，可拖动按钮" }
+  , "popup_title": { "message": "站点排除设置" }
+  , "popup_current_page_prefix": { "message": "当前页面：" }
+  , "popup_open_options": { "message": "打开设置" }
+  , "popup_toggle_exclude_add": { "message": "排除此站点" }
+  , "popup_toggle_exclude_remove": { "message": "取消排除此站点" }
+  , "popup_status_ok": { "message": "状态：未排除（将显示悬浮下载按钮）" }
+  , "popup_status_excluded": { "message": "状态：已排除" }
+  , "popup_status_excluded_with_rule": { "message": "状态：已排除（匹配规则：$1）" }
+  , "popup_hint": { "message": "说明：排除后此站点将不显示悬浮下载按钮。" }
+  , "options_title": { "message": "表格下载器设置" }
+  , "options_excludedUrls_label": { "message": "排除显示的网址（每行一个，支持包含匹配）" }
+  , "options_excludedUrls_placeholder": { "message": "例如： \nexample.com\nhttps://foo.bar/path" }
+  , "options_excludedUrls_hint": { "message": "含有这些片段的网址将不显示悬浮下载按钮。" }
+  , "options_buttonColor_label": { "message": "按钮颜色" }
+  , "options_iconColor_label": { "message": "图标颜色" }
+  , "options_buttonSize_label": { "message": "按钮大小（图标像素）" }
+  , "options_buttonSize_hint": { "message": "大小控制图标宽高（默认 20px）。" }
+  , "options_save": { "message": "保存" }
+  , "options_reset": { "message": "恢复默认" }
+  , "options_saved_alert": { "message": "已保存设置" }
+  , "options_reset_alert": { "message": "已恢复默认设置" }
 }

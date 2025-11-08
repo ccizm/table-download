@@ -11,4 +11,26 @@
   "cancel": { "message": "Cancel" },
   "export": { "message": "Export" },
   "default_sheet_name": { "message": "Table Data" }
+  , "download_button_title": { "message": "Click to download; drag to move" }
+  , "popup_title": { "message": "Site Exclusion" }
+  , "popup_current_page_prefix": { "message": "Current page:" }
+  , "popup_open_options": { "message": "Open Settings" }
+  , "popup_toggle_exclude_add": { "message": "Exclude this site" }
+  , "popup_toggle_exclude_remove": { "message": "Unexclude this site" }
+  , "popup_status_ok": { "message": "Status: Not excluded (button will be shown)" }
+  , "popup_status_excluded": { "message": "Status: Excluded" }
+  , "popup_status_excluded_with_rule": { "message": "Status: Excluded (matched rule: $1)" }
+  , "popup_hint": { "message": "After exclusion, the floating download button will not appear on this site." }
+  , "options_title": { "message": "Table Downloader Settings" }
+  , "options_excludedUrls_label": { "message": "Excluded URLs (one per line, substring match supported)" }
+  , "options_excludedUrls_placeholder": { "message": "e.g.: \nexample.com\nhttps://foo.bar/path" }
+  , "options_excludedUrls_hint": { "message": "Pages containing these substrings will not show the floating download button." }
+  , "options_buttonColor_label": { "message": "Button color" }
+  , "options_iconColor_label": { "message": "Icon color" }
+  , "options_buttonSize_label": { "message": "Button size (icon pixels)" }
+  , "options_buttonSize_hint": { "message": "Controls icon width/height (default 20px)." }
+  , "options_save": { "message": "Save" }
+  , "options_reset": { "message": "Reset to defaults" }
+  , "options_saved_alert": { "message": "Settings saved" }
+  , "options_reset_alert": { "message": "Defaults restored" }
 }

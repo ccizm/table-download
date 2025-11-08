@@ -11,4 +11,26 @@
   "cancel": { "message": "إلغاء" },
   "export": { "message": "تصدير" },
   "default_sheet_name": { "message": "بيانات الجدول" }
+  , "download_button_title": { "message": "انقر للتنزيل؛ اسحب للتحريك" }
+  , "popup_title": { "message": "استبعاد الموقع" }
+  , "popup_current_page_prefix": { "message": "الصفحة الحالية:" }
+  , "popup_open_options": { "message": "فتح الإعدادات" }
+  , "popup_toggle_exclude_add": { "message": "استبعاد هذا الموقع" }
+  , "popup_toggle_exclude_remove": { "message": "إلغاء استبعاد هذا الموقع" }
+  , "popup_status_ok": { "message": "الحالة: غير مستبعد (سيظهر الزر)" }
+  , "popup_status_excluded": { "message": "الحالة: مستبعد" }
+  , "popup_status_excluded_with_rule": { "message": "الحالة: مستبعد (القاعدة المطابقة: $1)" }
+  , "popup_hint": { "message": "بعد الاستبعاد، لن يظهر زر التنزيل العائم في هذا الموقع." }
+  , "options_title": { "message": "إعدادات أداة تنزيل الجداول" }
+  , "options_excludedUrls_label": { "message": "عناوين URL المستبعدة (سطر لكل عنوان، يدعم مطابقة الأجزاء)" }
+  , "options_excludedUrls_placeholder": { "message": "مثال: \nexample.com\nhttps://foo.bar/path" }
+  , "options_excludedUrls_hint": { "message": "الصفحات التي تحتوي هذه الأجزاء لن تعرض زر التنزيل العائم." }
+  , "options_buttonColor_label": { "message": "لون الزر" }
+  , "options_iconColor_label": { "message": "لون الأيقونة" }
+  , "options_buttonSize_label": { "message": "حجم الزر (بكسل الأيقونة)" }
+  , "options_buttonSize_hint": { "message": "يتحكم الحجم في عرض/ارتفاع الأيقونة (الافتراضي 20 بكسل)." }
+  , "options_save": { "message": "حفظ" }
+  , "options_reset": { "message": "استعادة الافتراضي" }
+  , "options_saved_alert": { "message": "تم حفظ الإعدادات" }
+  , "options_reset_alert": { "message": "تمت استعادة القيم الافتراضية" }
 }

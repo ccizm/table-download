@@ -11,4 +11,26 @@
   "cancel": { "message": "Отмена" },
   "export": { "message": "Экспорт" },
   "default_sheet_name": { "message": "Данные таблицы" }
+  , "download_button_title": { "message": "Нажмите для скачивания; перетащите, чтобы переместить" }
+  , "popup_title": { "message": "Исключение сайта" }
+  , "popup_current_page_prefix": { "message": "Текущая страница:" }
+  , "popup_open_options": { "message": "Открыть настройки" }
+  , "popup_toggle_exclude_add": { "message": "Исключить этот сайт" }
+  , "popup_toggle_exclude_remove": { "message": "Отменить исключение этого сайта" }
+  , "popup_status_ok": { "message": "Статус: Не исключён (кнопка будет показана)" }
+  , "popup_status_excluded": { "message": "Статус: Исключён" }
+  , "popup_status_excluded_with_rule": { "message": "Статус: Исключён (совпавшее правило: $1)" }
+  , "popup_hint": { "message": "После исключения плавающая кнопка загрузки не будет отображаться на этом сайте." }
+  , "options_title": { "message": "Настройки загрузчика таблиц" }
+  , "options_excludedUrls_label": { "message": "Исключённые URL (по одному в строке, поддерживается совпадение по фрагменту)" }
+  , "options_excludedUrls_placeholder": { "message": "например: \nexample.com\nhttps://foo.bar/path" }
+  , "options_excludedUrls_hint": { "message": "Страницы, содержащие эти фрагменты, не будут показывать плавающую кнопку загрузки." }
+  , "options_buttonColor_label": { "message": "Цвет кнопки" }
+  , "options_iconColor_label": { "message": "Цвет значка" }
+  , "options_buttonSize_label": { "message": "Размер кнопки (пиксели значка)" }
+  , "options_buttonSize_hint": { "message": "Размер управляет шириной/высотой значка (по умолчанию 20 px)." }
+  , "options_save": { "message": "Сохранить" }
+  , "options_reset": { "message": "Сбросить по умолчанию" }
+  , "options_saved_alert": { "message": "Настройки сохранены" }
+  , "options_reset_alert": { "message": "Настройки сброшены к значениям по умолчанию" }
 }

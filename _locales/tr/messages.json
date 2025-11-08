@@ -11,4 +11,26 @@
   "cancel": { "message": "İptal" },
   "export": { "message": "Dışa aktar" },
   "default_sheet_name": { "message": "Tablo verileri" }
+  , "download_button_title": { "message": "İndirmek için tıklayın; taşımak için sürükleyin" }
+  , "popup_title": { "message": "Site Dışlama" }
+  , "popup_current_page_prefix": { "message": "Geçerli sayfa:" }
+  , "popup_open_options": { "message": "Ayarları aç" }
+  , "popup_toggle_exclude_add": { "message": "Bu siteyi dışla" }
+  , "popup_toggle_exclude_remove": { "message": "Bu sitenin dışlamasını kaldır" }
+  , "popup_status_ok": { "message": "Durum: Dışlanmamış (buton gösterilecek)" }
+  , "popup_status_excluded": { "message": "Durum: Dışlandı" }
+  , "popup_status_excluded_with_rule": { "message": "Durum: Dışlandı (eşleşen kural: $1)" }
+  , "popup_hint": { "message": "Dışlandıktan sonra, bu sitede kayan indirme düğmesi görünmez." }
+  , "options_title": { "message": "Tablo İndirici Ayarları" }
+  , "options_excludedUrls_label": { "message": "Hariç tutulan URL'ler (satır başına bir, parça eşleşmesi desteklenir)" }
+  , "options_excludedUrls_placeholder": { "message": "örnek: \nexample.com\nhttps://foo.bar/path" }
+  , "options_excludedUrls_hint": { "message": "Bu parçaları içeren sayfalarda kayan indirme düğmesi gösterilmez." }
+  , "options_buttonColor_label": { "message": "Düğme rengi" }
+  , "options_iconColor_label": { "message": "Simge rengi" }
+  , "options_buttonSize_label": { "message": "Düğme boyutu (simge piksel)" }
+  , "options_buttonSize_hint": { "message": "Boyut simge genişliğini/yüksekliğini kontrol eder (varsayılan 20px)." }
+  , "options_save": { "message": "Kaydet" }
+  , "options_reset": { "message": "Varsayılana sıfırla" }
+  , "options_saved_alert": { "message": "Ayarlar kaydedildi" }
+  , "options_reset_alert": { "message": "Varsayılan ayarlara sıfırlandı" }
 }

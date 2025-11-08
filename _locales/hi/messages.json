@@ -11,4 +11,26 @@
   "cancel": { "message": "रद्द करें" },
   "export": { "message": "निर्यात" },
   "default_sheet_name": { "message": "टेबल डेटा" }
+  , "download_button_title": { "message": "डाउनलोड करने के लिए क्लिक करें; स्थानांतरित करने के लिए खींचें" }
+  , "popup_title": { "message": "साइट बहिष्करण" }
+  , "popup_current_page_prefix": { "message": "वर्तमान पृष्ठ:" }
+  , "popup_open_options": { "message": "सेटिंग्स खोलें" }
+  , "popup_toggle_exclude_add": { "message": "इस साइट को बहिष्कृत करें" }
+  , "popup_toggle_exclude_remove": { "message": "इस साइट का बहिष्करण हटाएँ" }
+  , "popup_status_ok": { "message": "स्थिति: बहिष्कृत नहीं (बटन दिखेगा)" }
+  , "popup_status_excluded": { "message": "स्थिति: बहिष्कृत" }
+  , "popup_status_excluded_with_rule": { "message": "स्थिति: बहिष्कृत (मेल खाने वाला नियम: $1)" }
+  , "popup_hint": { "message": "बहिष्करण के बाद, इस साइट पर फ्लोटिंग डाउनलोड बटन नहीं दिखेगा।" }
+  , "options_title": { "message": "टेबल डाउनलोडर सेटिंग्स" }
+  , "options_excludedUrls_label": { "message": "बहिष्कृत URL (प्रति पंक्ति एक, उपस्ट्रिंग मिलान समर्थित)" }
+  , "options_excludedUrls_placeholder": { "message": "उदाहरण: \nexample.com\nhttps://foo.bar/path" }
+  , "options_excludedUrls_hint": { "message": "इन अंशों को शामिल करने वाले पृष्ठों पर फ्लोटिंग डाउनलोड बटन नहीं दिखेगा।" }
+  , "options_buttonColor_label": { "message": "बटन रंग" }
+  , "options_iconColor_label": { "message": "आइकन रंग" }
+  , "options_buttonSize_label": { "message": "बटन आकार (आइकन पिक्सेल)" }
+  , "options_buttonSize_hint": { "message": "आकार आइकन की चौड़ाई/ऊंचाई नियंत्रित करता है (डिफ़ॉल्ट 20px)।" }
+  , "options_save": { "message": "सहेजें" }
+  , "options_reset": { "message": "डिफ़ॉल्ट पर रीसेट करें" }
+  , "options_saved_alert": { "message": "सेटिंग्स सहेजी गईं" }
+  , "options_reset_alert": { "message": "डिफ़ॉल्ट सेटिंग्स पुनर्स्थापित" }
 }

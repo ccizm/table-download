@@ -11,4 +11,26 @@
   "cancel": { "message": "취소" },
   "export": { "message": "내보내기" },
   "default_sheet_name": { "message": "테이블 데이터" }
+  , "download_button_title": { "message": "클릭하여 다운로드, 드래그하여 이동" }
+  , "popup_title": { "message": "사이트 제외" }
+  , "popup_current_page_prefix": { "message": "현재 페이지:" }
+  , "popup_open_options": { "message": "설정 열기" }
+  , "popup_toggle_exclude_add": { "message": "이 사이트 제외" }
+  , "popup_toggle_exclude_remove": { "message": "이 사이트 제외 해제" }
+  , "popup_status_ok": { "message": "상태: 제외되지 않음 (버튼이 표시됨)" }
+  , "popup_status_excluded": { "message": "상태: 제외됨" }
+  , "popup_status_excluded_with_rule": { "message": "상태: 제외됨 (일치한 규칙: $1)" }
+  , "popup_hint": { "message": "제외 후 이 사이트에서는 떠 있는 다운로드 버튼이 표시되지 않습니다." }
+  , "options_title": { "message": "테이블 다운로더 설정" }
+  , "options_excludedUrls_label": { "message": "제외할 URL (줄당 하나, 부분 문자열 일치 지원)" }
+  , "options_excludedUrls_placeholder": { "message": "예: \nexample.com\nhttps://foo.bar/path" }
+  , "options_excludedUrls_hint": { "message": "이 조각을 포함하는 페이지에서는 떠 있는 다운로드 버튼이 표시되지 않습니다." }
+  , "options_buttonColor_label": { "message": "버튼 색상" }
+  , "options_iconColor_label": { "message": "아이콘 색상" }
+  , "options_buttonSize_label": { "message": "버튼 크기 (아이콘 픽셀)" }
+  , "options_buttonSize_hint": { "message": "크기는 아이콘 너비/높이를 제어합니다 (기본 20px)." }
+  , "options_save": { "message": "저장" }
+  , "options_reset": { "message": "기본값으로 복원" }
+  , "options_saved_alert": { "message": "설정이 저장되었습니다" }
+  , "options_reset_alert": { "message": "기본값으로 복원되었습니다" }
 }

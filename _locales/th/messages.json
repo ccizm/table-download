@@ -11,4 +11,26 @@
   "cancel": { "message": "ยกเลิก" },
   "export": { "message": "ส่งออก" },
   "default_sheet_name": { "message": "ข้อมูลตาราง" }
+  , "download_button_title": { "message": "คลิกเพื่อดาวน์โหลด; ลากเพื่อย้าย" }
+  , "popup_title": { "message": "การยกเว้นไซต์" }
+  , "popup_current_page_prefix": { "message": "หน้าปัจจุบัน:" }
+  , "popup_open_options": { "message": "เปิดการตั้งค่า" }
+  , "popup_toggle_exclude_add": { "message": "ยกเว้นไซต์นี้" }
+  , "popup_toggle_exclude_remove": { "message": "ยกเลิกการยกเว้นไซต์นี้" }
+  , "popup_status_ok": { "message": "สถานะ: ไม่ได้ยกเว้น (จะแสดงปุ่ม)" }
+  , "popup_status_excluded": { "message": "สถานะ: ยกเว้นแล้ว" }
+  , "popup_status_excluded_with_rule": { "message": "สถานะ: ยกเว้นแล้ว (กฎที่ตรงกัน: $1)" }
+  , "popup_hint": { "message": "หลังยกเว้น ปุ่มดาวน์โหลดแบบลอยจะไม่ปรากฏในไซต์นี้" }
+  , "options_title": { "message": "การตั้งค่าตัวดาวน์โหลดตาราง" }
+  , "options_excludedUrls_label": { "message": "URL ที่ไม่รวม (หนึ่งต่อบรรทัด รองรับการจับคู่บางส่วน)" }
+  , "options_excludedUrls_placeholder": { "message": "เช่น: \nexample.com\nhttps://foo.bar/path" }
+  , "options_excludedUrls_hint": { "message": "หน้าที่มีชิ้นส่วนเหล่านี้จะไม่แสดงปุ่มดาวน์โหลดแบบลอย" }
+  , "options_buttonColor_label": { "message": "สีปุ่ม" }
+  , "options_iconColor_label": { "message": "สีไอคอน" }
+  , "options_buttonSize_label": { "message": "ขนาดปุ่ม (พิกเซลไอคอน)" }
+  , "options_buttonSize_hint": { "message": "ขนาดควบคุมความกว้าง/สูงของไอคอน (ค่าเริ่มต้น 20px)" }
+  , "options_save": { "message": "บันทึก" }
+  , "options_reset": { "message": "รีเซ็ตเป็นค่าเริ่มต้น" }
+  , "options_saved_alert": { "message": "บันทึกการตั้งค่าแล้ว" }
+  , "options_reset_alert": { "message": "รีเซ็ตเป็นค่าเริ่มต้นแล้ว" }
 }

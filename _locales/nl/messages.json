@@ -11,4 +11,26 @@
   "cancel": { "message": "Annuleren" },
   "export": { "message": "Exporteren" },
   "default_sheet_name": { "message": "Tabelgegevens" }
+  , "download_button_title": { "message": "Klik om te downloaden; sleep om te verplaatsen" }
+  , "popup_title": { "message": "Site-uitsluiting" }
+  , "popup_current_page_prefix": { "message": "Huidige pagina:" }
+  , "popup_open_options": { "message": "Instellingen openen" }
+  , "popup_toggle_exclude_add": { "message": "Deze site uitsluiten" }
+  , "popup_toggle_exclude_remove": { "message": "Uitsluiting voor deze site opheffen" }
+  , "popup_status_ok": { "message": "Status: Niet uitgesloten (knop wordt getoond)" }
+  , "popup_status_excluded": { "message": "Status: Uitgesloten" }
+  , "popup_status_excluded_with_rule": { "message": "Status: Uitgesloten (regel: $1)" }
+  , "popup_hint": { "message": "Na uitsluiten wordt de zwevende downloadknop niet getoond op deze site." }
+  , "options_title": { "message": "Instellingen Tabeldownloader" }
+  , "options_excludedUrls_label": { "message": "Uitgesloten URL's (één per regel, deelstring-match ondersteund)" }
+  , "options_excludedUrls_placeholder": { "message": "bijv.: \nexample.com\nhttps://foo.bar/path" }
+  , "options_excludedUrls_hint": { "message": "Pagina's met deze fragmenten tonen geen zwevende downloadknop." }
+  , "options_buttonColor_label": { "message": "Knopkleur" }
+  , "options_iconColor_label": { "message": "Icoonkleur" }
+  , "options_buttonSize_label": { "message": "Knopgrootte (icoonpixels)" }
+  , "options_buttonSize_hint": { "message": "De grootte bepaalt de breedte/hoogte van het icoon (standaard 20px)." }
+  , "options_save": { "message": "Opslaan" }
+  , "options_reset": { "message": "Terugzetten naar standaard" }
+  , "options_saved_alert": { "message": "Instellingen opgeslagen" }
+  , "options_reset_alert": { "message": "Standaardinstellingen hersteld" }
 }

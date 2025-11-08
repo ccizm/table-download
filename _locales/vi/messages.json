@@ -11,4 +11,26 @@
   "cancel": { "message": "Hủy" },
   "export": { "message": "Xuất" },
   "default_sheet_name": { "message": "Dữ liệu bảng" }
+  , "download_button_title": { "message": "Nhấn để tải xuống; kéo để di chuyển" }
+  , "popup_title": { "message": "Loại trừ trang web" }
+  , "popup_current_page_prefix": { "message": "Trang hiện tại:" }
+  , "popup_open_options": { "message": "Mở cài đặt" }
+  , "popup_toggle_exclude_add": { "message": "Loại trừ trang web này" }
+  , "popup_toggle_exclude_remove": { "message": "Hủy loại trừ trang web này" }
+  , "popup_status_ok": { "message": "Trạng thái: Không bị loại trừ (nút sẽ hiển thị)" }
+  , "popup_status_excluded": { "message": "Trạng thái: Đã loại trừ" }
+  , "popup_status_excluded_with_rule": { "message": "Trạng thái: Đã loại trừ (quy tắc khớp: $1)" }
+  , "popup_hint": { "message": "Sau khi loại trừ, nút tải xuống nổi sẽ không hiển thị trên trang này." }
+  , "options_title": { "message": "Cài đặt Trình tải Bảng" }
+  , "options_excludedUrls_label": { "message": "URL loại trừ (mỗi dòng một, hỗ trợ khớp theo đoạn)" }
+  , "options_excludedUrls_placeholder": { "message": "ví dụ: \nexample.com\nhttps://foo.bar/path" }
+  , "options_excludedUrls_hint": { "message": "Các trang chứa những đoạn này sẽ không hiển thị nút tải xuống nổi." }
+  , "options_buttonColor_label": { "message": "Màu nút" }
+  , "options_iconColor_label": { "message": "Màu biểu tượng" }
+  , "options_buttonSize_label": { "message": "Kích thước nút (pixel biểu tượng)" }
+  , "options_buttonSize_hint": { "message": "Kích thước điều khiển chiều rộng/chiều cao của biểu tượng (mặc định 20px)." }
+  , "options_save": { "message": "Lưu" }
+  , "options_reset": { "message": "Khôi phục mặc định" }
+  , "options_saved_alert": { "message": "Đã lưu cài đặt" }
+  , "options_reset_alert": { "message": "Đã khôi phục cài đặt mặc định" }
 }

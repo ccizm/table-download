@@ -11,10 +11,12 @@
   },
   "action": {
     "default_icon": "icon.png",
-    "default_title": "__MSG_action_title__"
+    "default_title": "__MSG_action_title__",
+    "default_popup": "popup.html"
   },
   "default_locale": "zh_CN",
-  "permissions": ["activeTab"],
+  "permissions": ["activeTab", "storage"],
+  "options_page": "options.html",
   "content_scripts": [
     {
       "matches": ["<all_urls>"],

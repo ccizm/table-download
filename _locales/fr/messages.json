@@ -11,4 +11,26 @@
   "cancel": { "message": "Annuler" },
   "export": { "message": "Exporter" },
   "default_sheet_name": { "message": "Données du tableau" }
+  , "download_button_title": { "message": "Cliquer pour télécharger ; glisser pour déplacer" }
+  , "popup_title": { "message": "Exclusion du site" }
+  , "popup_current_page_prefix": { "message": "Page actuelle :" }
+  , "popup_open_options": { "message": "Ouvrir les paramètres" }
+  , "popup_toggle_exclude_add": { "message": "Exclure ce site" }
+  , "popup_toggle_exclude_remove": { "message": "Annuler l’exclusion de ce site" }
+  , "popup_status_ok": { "message": "Statut : Non exclu (le bouton sera affiché)" }
+  , "popup_status_excluded": { "message": "Statut : Exclu" }
+  , "popup_status_excluded_with_rule": { "message": "Statut : Exclu (règle correspondante : $1)" }
+  , "popup_hint": { "message": "Après exclusion, le bouton de téléchargement flottant ne s’affichera pas sur ce site." }
+  , "options_title": { "message": "Paramètres du téléchargeur de tableau" }
+  , "options_excludedUrls_label": { "message": "URL exclues (une par ligne, correspondance par sous-chaîne)" }
+  , "options_excludedUrls_placeholder": { "message": "ex. : \nexample.com\nhttps://foo.bar/path" }
+  , "options_excludedUrls_hint": { "message": "Les pages contenant ces fragments n’afficheront pas le bouton de téléchargement flottant." }
+  , "options_buttonColor_label": { "message": "Couleur du bouton" }
+  , "options_iconColor_label": { "message": "Couleur de l’icône" }
+  , "options_buttonSize_label": { "message": "Taille du bouton (pixels de l’icône)" }
+  , "options_buttonSize_hint": { "message": "La taille contrôle la largeur/hauteur de l’icône (20 px par défaut)." }
+  , "options_save": { "message": "Enregistrer" }
+  , "options_reset": { "message": "Réinitialiser par défaut" }
+  , "options_saved_alert": { "message": "Paramètres enregistrés" }
+  , "options_reset_alert": { "message": "Valeurs par défaut rétablies" }
 }

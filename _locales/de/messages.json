@@ -11,4 +11,26 @@
   "cancel": { "message": "Abbrechen" },
   "export": { "message": "Exportieren" },
   "default_sheet_name": { "message": "Tabellendaten" }
+  , "download_button_title": { "message": "Klicken zum Herunterladen; ziehen zum Verschieben" }
+  , "popup_title": { "message": "Website-Ausschluss" }
+  , "popup_current_page_prefix": { "message": "Aktuelle Seite:" }
+  , "popup_open_options": { "message": "Einstellungen öffnen" }
+  , "popup_toggle_exclude_add": { "message": "Diese Website ausschließen" }
+  , "popup_toggle_exclude_remove": { "message": "Ausschluss für diese Website aufheben" }
+  , "popup_status_ok": { "message": "Status: Nicht ausgeschlossen (Schaltfläche wird angezeigt)" }
+  , "popup_status_excluded": { "message": "Status: Ausgeschlossen" }
+  , "popup_status_excluded_with_rule": { "message": "Status: Ausgeschlossen (Regel: $1)" }
+  , "popup_hint": { "message": "Nach Ausschluss wird die schwebende Download-Schaltfläche auf dieser Website nicht angezeigt." }
+  , "options_title": { "message": "Einstellungen des Tabellen-Downloaders" }
+  , "options_excludedUrls_label": { "message": "Ausgeschlossene URLs (eine pro Zeile, Teilstring-Match unterstützt)" }
+  , "options_excludedUrls_placeholder": { "message": "z. B.: \nexample.com\nhttps://foo.bar/path" }
+  , "options_excludedUrls_hint": { "message": "Seiten mit diesen Teilstrings zeigen den schwebenden Download-Button nicht an." }
+  , "options_buttonColor_label": { "message": "Schaltflächenfarbe" }
+  , "options_iconColor_label": { "message": "Symbolfarbe" }
+  , "options_buttonSize_label": { "message": "Schaltflächengröße (Symbolpixel)" }
+  , "options_buttonSize_hint": { "message": "Steuert die Symbolbreite/-höhe (Standard 20 px)." }
+  , "options_save": { "message": "Speichern" }
+  , "options_reset": { "message": "Auf Standard zurücksetzen" }
+  , "options_saved_alert": { "message": "Einstellungen gespeichert" }
+  , "options_reset_alert": { "message": "Standardeinstellungen wiederhergestellt" }
 }

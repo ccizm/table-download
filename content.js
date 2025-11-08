@@ -13,11 +13,48 @@ function t(key, fallback) {
   }
 }
 
+// 用户设置（从扩展设置页读取）
+const DEFAULT_SETTINGS = {
+  excludedUrls: [],
+  buttonColor: 'rgba(65, 117, 5, 1)',
+  iconColor: '#FFFFFF',
+  buttonSize: 20,
+};
+let USER_SETTINGS = DEFAULT_SETTINGS;
+
+function loadUserSettings() {
+  return new Promise((resolve) => {
+    try {
+      if (typeof chrome !== 'undefined' && chrome.storage && chrome.storage.sync) {
+        chrome.storage.sync.get(DEFAULT_SETTINGS, (conf) => {
+          USER_SETTINGS = Object.assign({}, DEFAULT_SETTINGS, conf || {});
+          resolve(USER_SETTINGS);
+        });
+      } else {
+        resolve(USER_SETTINGS);
+      }
+    } catch (_) {
+      resolve(USER_SETTINGS);
+    }
+  });
+}
+
+function isExcludedBySettings(url) {
+  const list = (USER_SETTINGS.excludedUrls || []).filter(Boolean);
+  return list.some(piece => {
+    try { return piece && url.includes(piece); } catch (_) { return false; }
+  });
+}
+
 // 初始化：处理页面已有的表格 + 监听未来动态添加的表格
-function initTableDetector() {
+async function initTableDetector() {
+  await loadUserSettings();
+  // 如果当前网址命中排除列表，则不挂载按钮
+  if (isExcludedBySettings(location.href)) {
+    return;
+  }
   // 处理初始加载的表格
   processExistingTables();
-  
   // 监听DOM变化，检测动态添加的表格
   observeDOMChanges();
 }
@@ -155,8 +192,10 @@ function addDownloadButton(table) {
 
   // 创建下载按钮
   const button = document.createElement('div');
-  button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px" fill="#FFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>';
+  button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>';
   button.className = 'table-download-btn';
+  // 悬浮提示：使用国际化标题
+  button.title = t('download_button_title', '点击下载，可拖动按钮');
 
   // 按钮样式
   button.style.cssText = `
@@ -165,8 +204,8 @@ function addDownloadButton(table) {
     left: 5px;
     z-index: 9; /* 确保按钮在表格内容上方 */
     padding: 2px 4px;
-    background-color: rgba(65, 117, 5, 1);
-    color: white;
+    background-color: ${USER_SETTINGS.buttonColor};
+    color: ${USER_SETTINGS.iconColor};
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -174,6 +213,15 @@ function addDownloadButton(table) {
     opacity: 0.2;
     transition: opacity 0.2s, transform 0.2s;
   `;
+
+  // 应用尺寸与图标颜色
+  try {
+    const svg = button.querySelector('svg');
+    if (svg) {
+      svg.setAttribute('width', String(USER_SETTINGS.buttonSize) + 'px');
+      svg.setAttribute('height', String(USER_SETTINGS.buttonSize) + 'px');
+    }
+  } catch (_) {}
 
   // 鼠标悬停效果
   button.addEventListener('mouseover', () => {
@@ -185,8 +233,17 @@ function addDownloadButton(table) {
     button.style.transform = 'scale(1)';
   });
 
+  // 仅横向拖动按钮（限制在表格内部）
+  enableHorizontalDrag(button, table);
+
   // 点击事件（调用导出Excel的方法）
   button.addEventListener('click', (e) => {
+    // 如果刚发生拖动，阻止点击触发
+    if (button.dataset.dragMoved === 'true') {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
     e.stopPropagation();
     // 打开轻量设置面板
     showSettingsPanel(table, button);
@@ -204,8 +261,10 @@ function addFrameworkDownloadButton(wrapper) {
   }
 
   const button = document.createElement('div');
-  button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px" fill="#FFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>';
+  button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px" fill="currentColor"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>';
   button.className = 'table-download-btn';
+  // 悬浮提示：使用国际化标题
+  button.title = t('download_button_title', '点击下载，可拖动按钮');
 
   button.style.cssText = `
     position: absolute;
@@ -213,8 +272,8 @@ function addFrameworkDownloadButton(wrapper) {
     left: 5px;
     z-index: 9;
     padding: 4px 8px;
-    background-color: rgba(65, 117, 5, 1);
-    color: white;
+    background-color: ${USER_SETTINGS.buttonColor};
+    color: ${USER_SETTINGS.iconColor};
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -222,6 +281,15 @@ function addFrameworkDownloadButton(wrapper) {
     opacity: 0.3;
     transition: opacity 0.2s, transform 0.2s;
   `;
+
+  // 应用尺寸与图标颜色
+  try {
+    const svg = button.querySelector('svg');
+    if (svg) {
+      svg.setAttribute('width', String(USER_SETTINGS.buttonSize) + 'px');
+      svg.setAttribute('height', String(USER_SETTINGS.buttonSize) + 'px');
+    }
+  } catch (_) {}
 
   button.addEventListener('mouseover', () => {
     button.style.opacity = '1';
@@ -232,12 +300,65 @@ function addFrameworkDownloadButton(wrapper) {
     button.style.transform = 'scale(1)';
   });
 
+  // 仅横向拖动按钮（限制在容器内部）
+  enableHorizontalDrag(button, wrapper);
+
   button.addEventListener('click', (e) => {
+    // 如果刚发生拖动，阻止点击触发
+    if (button.dataset.dragMoved === 'true') {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
     e.stopPropagation();
     showSettingsPanel(wrapper, button);
   });
 
   wrapper.appendChild(button);
+}
+
+// 使下载按钮可在容器内进行水平拖动
+function enableHorizontalDrag(button, container) {
+  let dragging = false;
+  let moved = false;
+  let startX = 0;
+  let startLeft = 0;
+
+  const onPointerMove = (e) => {
+    if (!dragging) return;
+    const clientX = e.clientX;
+    const dx = clientX - startX;
+    if (Math.abs(dx) > 2) moved = true;
+    let newLeft = startLeft + dx;
+    const containerWidth = container.clientWidth || container.offsetWidth || 0;
+    const maxLeft = Math.max(0, containerWidth - button.offsetWidth);
+    if (newLeft < 0) newLeft = 0;
+    if (newLeft > maxLeft) newLeft = maxLeft;
+    button.style.left = `${Math.round(newLeft)}px`;
+  };
+
+  const onPointerUp = (e) => {
+    if (!dragging) return;
+    dragging = false;
+    try { button.releasePointerCapture && button.releasePointerCapture(e.pointerId); } catch {}
+    document.removeEventListener('pointermove', onPointerMove);
+    document.removeEventListener('pointerup', onPointerUp);
+    // 标记刚发生拖动，短时内阻止点击
+    button.dataset.dragMoved = moved ? 'true' : 'false';
+    setTimeout(() => { button.dataset.dragMoved = 'false'; moved = false; }, 150);
+  };
+
+  button.addEventListener('pointerdown', (e) => {
+    if (e.button !== 0) return; // 仅左键
+    dragging = true;
+    moved = false;
+    startX = e.clientX;
+    startLeft = parseFloat(getComputedStyle(button).left) || 0;
+    try { button.setPointerCapture && button.setPointerCapture(e.pointerId); } catch {}
+    document.addEventListener('pointermove', onPointerMove);
+    document.addEventListener('pointerup', onPointerUp);
+    e.preventDefault();
+  });
 }
 
 // 工具：判断元素是否可见

@@ -11,4 +11,26 @@
   "cancel": { "message": "取消" },
   "export": { "message": "匯出" },
   "default_sheet_name": { "message": "表格資料" }
+  , "download_button_title": { "message": "點擊下載，可拖動按鈕" }
+  , "popup_title": { "message": "站點排除設定" }
+  , "popup_current_page_prefix": { "message": "當前頁面：" }
+  , "popup_open_options": { "message": "打開設定" }
+  , "popup_toggle_exclude_add": { "message": "排除此站點" }
+  , "popup_toggle_exclude_remove": { "message": "取消排除此站點" }
+  , "popup_status_ok": { "message": "狀態：未排除（將顯示懸浮下載按鈕）" }
+  , "popup_status_excluded": { "message": "狀態：已排除" }
+  , "popup_status_excluded_with_rule": { "message": "狀態：已排除（匹配規則：$1）" }
+  , "popup_hint": { "message": "說明：排除後此站點將不顯示懸浮下載按鈕。" }
+  , "options_title": { "message": "表格下載器設定" }
+  , "options_excludedUrls_label": { "message": "排除顯示的網址（每行一個，支援包含比對）" }
+  , "options_excludedUrls_placeholder": { "message": "例如： \nexample.com\nhttps://foo.bar/path" }
+  , "options_excludedUrls_hint": { "message": "含有這些片段的網址將不顯示懸浮下載按鈕。" }
+  , "options_buttonColor_label": { "message": "按鈕顏色" }
+  , "options_iconColor_label": { "message": "圖示顏色" }
+  , "options_buttonSize_label": { "message": "按鈕大小（圖示像素）" }
+  , "options_buttonSize_hint": { "message": "大小控制圖示寬高（預設 20px）。" }
+  , "options_save": { "message": "儲存" }
+  , "options_reset": { "message": "恢復預設" }
+  , "options_saved_alert": { "message": "已儲存設定" }
+  , "options_reset_alert": { "message": "已恢復預設設定" }
 }

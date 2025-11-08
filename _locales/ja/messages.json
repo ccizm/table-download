@@ -11,4 +11,26 @@
   "cancel": { "message": "キャンセル" },
   "export": { "message": "エクスポート" },
   "default_sheet_name": { "message": "テーブルデータ" }
+  , "download_button_title": { "message": "クリックでダウンロード；ドラッグで移動" }
+  , "popup_title": { "message": "サイト除外設定" }
+  , "popup_current_page_prefix": { "message": "現在のページ：" }
+  , "popup_open_options": { "message": "設定を開く" }
+  , "popup_toggle_exclude_add": { "message": "このサイトを除外" }
+  , "popup_toggle_exclude_remove": { "message": "このサイトの除外を解除" }
+  , "popup_status_ok": { "message": "状態：未除外（ボタンが表示されます）" }
+  , "popup_status_excluded": { "message": "状態：除外" }
+  , "popup_status_excluded_with_rule": { "message": "状態：除外（一致したルール：$1）" }
+  , "popup_hint": { "message": "除外後、このサイトでは浮動ダウンロードボタンは表示されません。" }
+  , "options_title": { "message": "テーブルダウンローダー設定" }
+  , "options_excludedUrls_label": { "message": "除外するURL（1行に1つ、部分一致をサポート）" }
+  , "options_excludedUrls_placeholder": { "message": "例： \nexample.com\nhttps://foo.bar/path" }
+  , "options_excludedUrls_hint": { "message": "これらの断片を含むページでは、浮動ダウンロードボタンは表示されません。" }
+  , "options_buttonColor_label": { "message": "ボタンの色" }
+  , "options_iconColor_label": { "message": "アイコンの色" }
+  , "options_buttonSize_label": { "message": "ボタンサイズ（アイコンのピクセル）" }
+  , "options_buttonSize_hint": { "message": "サイズはアイコンの幅・高さを制御します（既定 20px）。" }
+  , "options_save": { "message": "保存" }
+  , "options_reset": { "message": "デフォルトに戻す" }
+  , "options_saved_alert": { "message": "設定を保存しました" }
+  , "options_reset_alert": { "message": "デフォルト設定に戻しました" }
 }

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Table Downloader - Exclude Site</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 12px; min-width: 280px; }
+      h1 { font-size: 16px; margin: 0 0 8px; }
+      .url { font-size: 12px; color: #555; margin-bottom: 8px; word-break: break-all; }
+      .status { font-size: 12px; margin-bottom: 12px; }
+      .status.ok { color: #2e7d32; }
+      .status.excluded { color: #d32f2f; }
+      .actions { display: flex; gap: 8px; }
+      button { padding: 6px 10px; cursor: pointer; }
+      button[disabled] { opacity: .6; cursor: not-allowed; }
+      .hint { font-size: 11px; color: #777; margin-top: 8px; }
+    </style>
+  </head>
+  <body>
+    <h1>站点排除设置</h1>
+    <div class="url" id="url"></div>
+    <div class="status" id="status"></div>
+    <div class="actions">
+      <button id="toggleExclude">排除站点</button>
+      <button id="openOptions">打开设置</button>
+    </div>
+    <div class="hint">说明：排除后此站点将不显示悬浮下载按钮。</div>
+    <script src="popup.js"></script>
+  </body>
+  </html>
